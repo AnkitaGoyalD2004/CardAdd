@@ -1,0 +1,47 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    cursor: move;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resizable-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none; /* Disable textarea resize to prevent conflict with card resize */
+}
+
+.show-more-button {
+    display: block;
+    margin-top: 10px;
+}
+
+.delete-button {
+    display: block;
+    margin-top: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
